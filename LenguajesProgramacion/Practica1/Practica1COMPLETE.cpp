@@ -458,8 +458,10 @@ class System{
     public:
     Administrador admin;
     Cliente cliente;
+    LinkedList Inventory;
+    LinkedList Carrito;
 
-    void run(LinkedList Inventory, LinkedList Carrito){
+    void run(){
         int input;
         bool runningmain = true;
         bool runningadmin = true;
@@ -528,8 +530,6 @@ class System{
 
 int main(){
     System system;
-    LinkedList Inventory;
-    LinkedList Carrito;
-    system.run(Inventory, Carrito);
+    system.run();
     return 0;
 }
